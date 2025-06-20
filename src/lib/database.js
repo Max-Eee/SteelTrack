@@ -125,7 +125,7 @@ export async function initializeDatabase(accessCode = null) {
       console.log(`Executable directory: ${exeDir}`);
 
       // Create portable database path (next to executable)
-      portableDbPath = await join(exeDir, "data", "st_detail.db");
+      portableDbPath = await join(exeDir, "data", "steel_track.db");
       const portableDataDir = await join(exeDir, "data");
 
       console.log(`Portable database path: ${portableDbPath}`);
@@ -147,7 +147,7 @@ export async function initializeDatabase(accessCode = null) {
 
         // Try to copy from bundled resources if available
         try {
-          const resourcePath = await resolveResource("st_detail.db");
+          const resourcePath = await resolveResource("steel_track.db");
           console.log(`Checking for bundled database: ${resourcePath}`);
 
           if (await exists(resourcePath)) {
@@ -172,9 +172,9 @@ export async function initializeDatabase(accessCode = null) {
 
       // Fallback: try direct relative paths
       const fallbackPaths = [
-        "sqlite:st_detail.db", // Same directory as executable
-        "sqlite:data/st_detail.db", // Local data subfolder
-        "sqlite:./data/st_detail.db", // Current directory data subfolder
+        "sqlite:steel_track.db", // Same directory as executable
+        "sqlite:data/steel_track.db", // Local data subfolder
+        "sqlite:./data/steel_track.db", // Current directory data subfolder
       ];
 
       for (const dbPath of fallbackPaths) {
@@ -3112,11 +3112,11 @@ export async function createDatabaseBackup() {
     // Get current database path
     const currentExe = await invoke("get_current_exe_path");
     const exeDir = await dirname(currentExe);
-    const currentDbPath = await join(exeDir, "data", "st_detail.db");
+    const currentDbPath = await join(exeDir, "data", "steel_track.db");
 
     // Open save dialog
     const backupPath = await save({
-      defaultPath: `backup_st_detail_${new Date()
+      defaultPath: `backup_steel_track_${new Date()
         .toISOString()
         .split("T")[0]
         .replace(/-/g, "")}.db`,
@@ -3160,7 +3160,7 @@ export async function loadDatabaseFromFile() {
       // Get current database path
       const currentExe = await invoke("get_current_exe_path");
       const exeDir = await dirname(currentExe);
-      const currentDbPath = await join(exeDir, "data", "st_detail.db");
+      const currentDbPath = await join(exeDir, "data", "steel_track.db");
 
       // Verify the selected file exists
       if (!(await exists(selectedFile))) {
@@ -3178,7 +3178,7 @@ export async function loadDatabaseFromFile() {
         const backupPath = await join(
           exeDir,
           "data",
-          `st_detail_backup_${Date.now()}.db`
+          `steel_track_backup_${Date.now()}.db`
         );
         if (await exists(currentDbPath)) {
           await copyFile(currentDbPath, backupPath);
@@ -3212,7 +3212,7 @@ export async function getCurrentDatabaseInfo() {
   try {
     const currentExe = await invoke("get_current_exe_path");
     const exeDir = await dirname(currentExe);
-    const currentDbPath = await join(exeDir, "data", "st_detail.db");
+    const currentDbPath = await join(exeDir, "data", "steel_track.db");
 
     if (await exists(currentDbPath)) {
       const meta = await metadata(currentDbPath);

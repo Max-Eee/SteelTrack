@@ -8,7 +8,7 @@ import fs from 'fs';
 import crypto from 'crypto';
 
 // Test access code
-const testAccessCode = 'ST#Pass';
+const testAccessCode = 'ST#Pas';
 
 // Hash function compatible with the auth.js implementation
 async function hashCode(code) {
@@ -163,7 +163,7 @@ async function setupEncryptedDatabase() {
     }
 
     // Open database
-    const dbPath = path.join(dataDir, 'st_detail.db');
+    const dbPath = path.join(dataDir, 'steel_track.db');
     console.log('Opening database at:', dbPath);
     
     const db = await open({
@@ -360,7 +360,7 @@ async function migrateExistingData() {
   console.log('📦 Migrating existing database to encrypted format...');
   
   try {
-    const dbPath = path.join(process.cwd(), 'src-tauri', 'target', 'debug', 'data', 'st_detail.db');
+    const dbPath = path.join(process.cwd(), 'src-tauri', 'target', 'debug', 'data', 'steel_track.db');
     
     if (!fs.existsSync(dbPath)) {
       console.log('❌ Database does not exist. Please run setup first.');

@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Production Setup Script for ST Detail App
+ * Production Setup Script for SteelTrack App
  * 
  * This script helps set up the correct folder structure for production deployment,
  * especially for portable installations (like on a pendrive).
  * 
  * Expected structure after build:
  * src-tauri/target/release/
- * ├── st-detail.exe (or your app executable)
+ * ├── steel-track.exe (or your app executable)
  * └── data/
  *     └── st_detail.db
  */

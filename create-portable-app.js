@@ -11,7 +11,7 @@ console.log('📦 Creating portable app package...');
 // Define paths
 const releasePath = path.join(__dirname, 'src-tauri', 'target', 'release');
 const portablePath = path.join(__dirname, 'portable-app');
-const exePath = path.join(releasePath, 'st-detail.exe');
+const exePath = path.join(releasePath, 'steel-track.exe');
 const dataPath = path.join(releasePath, 'data');
 
 // Function to copy directory recursively
@@ -70,16 +70,16 @@ try {
 
     // Check if executable exists
     if (!fs.existsSync(exePath)) {
-        console.log('❌ st-detail.exe not found in release directory');
+        console.log('❌ steel-track.exe not found in release directory');
         console.log('   Make sure you have run "npm run tauri:build" first');
         process.exit(1);
     }
 
     // Copy executable
-    console.log('📋 Copying st-detail.exe...');
-    const destExePath = path.join(portablePath, 'st-detail.exe');
+    console.log('📋 Copying steel-track.exe...');
+    const destExePath = path.join(portablePath, 'steel-track.exe');
     if (copyFile(exePath, destExePath)) {
-        console.log('✅ st-detail.exe copied successfully');
+        console.log('✅ steel-track.exe copied successfully');
     } else {
         throw new Error('Failed to copy executable');
     }
@@ -100,12 +100,12 @@ try {
 This is a portable version of ST Detail application.
 
 Files included:
-- st-detail.exe: The main application executable
+- steel-track.exe: The main application executable
 - data/: Database and application data folder
 
 Instructions:
-1. Keep the st-detail.exe and data folder in the same directory
-2. Double-click st-detail.exe to run the application
+1. Keep the steel-track.exe and data folder in the same directory
+2. Double-click steel-track.exe to run the application
 3. The application will automatically find the database in the data folder
 
 For support or updates, refer to the main project repository.
@@ -120,9 +120,9 @@ Generated on: ${new Date().toLocaleString()}
     console.log('\n🎉 Portable app package created successfully!');
     console.log(`📁 Location: ${portablePath}`);
     console.log('\n📋 Contents:');
-    console.log('   ├── st-detail.exe');
+    console.log('   ├── steel-track.exe');
     console.log('   ├── data/');
-    console.log('   │   └── st_detail.db (and other data files)');
+    console.log('   │   └── steel_track.db (and other data files)');
     console.log('   └── README.txt');
     console.log('\n🚀 The portable app is ready for distribution!');
 

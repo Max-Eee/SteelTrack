@@ -12,7 +12,7 @@ For **Windows users**, prebuilt applications are available in the [**Releases**]
 Download the latest version for immediate use without requiring development setup.
   
 > [!IMPORTANT]
-> **Default Password**:  ST#Pass
+> **Default Password**:  ST#Pas
 > 
 > **Secure Access Control**: This application features encrypted data storage and secure authentication to protect your sensitive inventory information.
 
@@ -54,7 +54,7 @@ Download the latest version for immediate use without requiring development setu
 1. **Clone the repository**
    ```bash
    git clone [repository-url]
-   cd "ST Detail"
+   cd "SteelTrack"
    ```
 
 2. **Install dependencies**
