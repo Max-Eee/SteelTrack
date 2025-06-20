@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "st-detail",
+  "productName": "steel-track",
   "version": "0.1.0",
-  "identifier": "com.st-detail.app",  "build": {
+  "identifier": "com.steel-track.app",  "build": {
     "beforeDevCommand": "npm run dev:setup",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "npm run build",
@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "st-detail",
+        "title": "steel-track",
         "width": 800,
         "height": 600,
         "maximized": true

@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    st_detail_lib::run()
+    steel_track_lib::run()
 }
