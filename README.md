@@ -2,7 +2,6 @@
 
 A comprehensive **`tauri app`** built with modern technologies for tracking steel materials, dimensions, sales, and distribution center operations.
 
----
 
 <samp>
 
@@ -15,6 +14,10 @@ Download the latest version for immediate use without requiring development setu
 > **Default Password**:  ST#Pas
 > 
 > **Secure Access Control**: This application features encrypted data storage and secure authentication to protect your sensitive inventory information.
+
+## 🎴 Design
+![Screenshot 2025-06-22 164445](https://github.com/user-attachments/assets/7516b912-477a-4a1d-903a-3fbecde724f0)
+![Screenshot 2025-06-22 164422](https://github.com/user-attachments/assets/71900117-b968-43dd-a84d-4472e4ccd7a7)
 
 ## ✨ Features
 
