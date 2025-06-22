@@ -8,7 +8,7 @@ A comprehensive **`tauri app`** built with modern technologies for tracking stee
 
 ## 📥 Download
 
-For **Windows users**, prebuilt applications are available in the [**Releases**](../../releases) section. <br>
+For **Windows users**, prebuilt applications is available in the [**Drive**](https://drive.google.com/drive/u/2/folders/1CT8e_kR-C6gZjb1G5birkLrMQOnOcxqK). <br>
 Download the latest version for immediate use without requiring development setup.
   
 > [!IMPORTANT]
