@@ -7,7 +7,7 @@ A comprehensive **`tauri app`** built with modern technologies for tracking stee
 
 ## 📥 Download
 
-For **Windows users**, prebuilt applications is available in the [**Drive**](https://drive.google.com/drive/u/2/folders/1CT8e_kR-C6gZjb1G5birkLrMQOnOcxqK). <br>
+For **Windows users**, prebuilt applications is available [**Download**]((https://github.com/Max-Eee/SteelTrack/releases/download/v.1.0.0/SteelTrack.zip)). <br>
 Download the latest version for immediate use without requiring development setup.
   
 > [!IMPORTANT]
